@@ -3,20 +3,12 @@ import './index.css';
 
 function Home(props) {
 
-  var pin = useRef()
-
-  useState(()=>{
-    pin.current && pin.current.focus()
-  },[])
-
   return (
     <div className='home'>
-      <input className='pin' type={"password"} ref={pin}/>
-      <button className='pingo' onClick={()=>{
-        if(pin.current.value=="8379"){
-          window.location.pathname="/ser"
-        }
-      }}/>
+      <div className='homeHolder'>
+        <div className='homesplitter homesplitterimg'><img className='homelogo' src='isklogo.png'></img></div>
+        <div className='homesplitter homesplitterinp'><input></input></div>
+      </div>
     </div>
   )
 

@@ -1,26 +1,33 @@
 .home {
     display: flex;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-.pin {
-    background-color: white;
-    height: 4vw;
-    border: none;
-    width: 20vw;
-    color: black;
-    padding: 1vw;
-    text-align: center;
+.homeHolder {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.pingo {
-    margin: 2vw;
-    background: var(--bar);
-    height: 7vw;
-    width: 7vw;
-    font-size: 2vw;
-    border-radius: 100%;
+.homesplitter {
+    display: flex;
+    height: 50%;
+}
+
+.homesplitterimg {
+    align-items: flex-end;
+}
+
+.homesplitterinp {
+    align-items: flex-start
+}
+
+.homelogo {
+    width: 20vw;
+    height:min-content;
+    filter: invert(38%) sepia(72%) saturate(7199%) hue-rotate(199deg) brightness(100%) contrast(80%);
+    margin-bottom: 3vw;
 }
